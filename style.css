@@ -55,12 +55,14 @@
   .portfolio-skills,
   .btn-bg,
   .portfolio,
+  .services,
   .skills {
     display: flex;
   }
   
   .hero,
   .portfolio,
+  .services,
   .skills {
     flex-direction: column;
   }
@@ -68,6 +70,7 @@
   .hero,
   .btn-bg,
   .portfolio,
+  .services,
   .skills {
     align-items: center;
   }
@@ -82,6 +85,7 @@
   .hero,
   .logo-container,
   .portfolio,
+  .services,  
   .skills {
     gap: 1rem;
   }
@@ -272,10 +276,11 @@
   
   .hero,
   .portfolio,
+  .services,
   .skills {
     margin-top: 2rem;
   }
-  
+  .services,
   .skills {
     display: none;
   }
@@ -305,6 +310,7 @@
   
   @media screen and (min-width: 900px) {
     .skills,
+    .services,
     .portfolio {
       flex-direction: row;
       width: 45rem;
@@ -312,6 +318,7 @@
     .skills {
       margin: 2rem auto 0;
     }
+    .services,
     .portfolio {
       margin: 2rem auto;
       flex-wrap: wrap;
