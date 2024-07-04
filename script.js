@@ -3,37 +3,25 @@ const portfolio = document.getElementById("portfolio");
 const portfolioBtn = document.getElementById("portfolio-btn");
 const skills = document.getElementById("skills");
 const skillsBtn = document.getElementById("skills-btn");
-const services = document.getElementById("services");
-const servicesBtn = document.getElementById("services-btn");
+
 
 portfolioBtn.addEventListener("click", (event) => {
-  services.style.display = "none";
+  
   skills.style.display = "none";
   portfolio.style.display = "flex";
-  servicesBtn.classList.remove("active-btn")
+ 
   skillsBtn.classList.remove("active-btn");
   portfolioBtn.classList.add("active-btn");
 });
 
 skillsBtn.addEventListener("click", (event) => {
-  services.style.display = "none";
+ 
   skills.style.display = "flex";
   portfolio.style.display = "none";
-  servicesBtn.classList.remove("active-btn");
+  
   portfolioBtn.classList.remove("active-btn");
   skillsBtn.classList.add("active-btn");
 });
-
-servicesBtn.addEventListener("click", (event) => {
-  services.style.display = "flex";
-  skills.style.display = "none";
-  portfolio.style.display = "none";
-  skillsBtn.classList.remove("active-btn");
-  portfolioBtn.classList.remove("active-btn");
-  servicesBtn.classList.add("active-btn");
-}
-
-)
 
 // Light & Dark Theme
 document.addEventListener("DOMContentLoaded", () => {
