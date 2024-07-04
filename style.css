@@ -156,9 +156,14 @@ footer,
 }
 
 .experience {
+  background-color: whitesmoke;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  padding: 1em;
   margin: auto;
   margin-top: 1.4rem;
   max-width: 20rem;
+  font-size: 25px;
 }
 
 .experience b {
